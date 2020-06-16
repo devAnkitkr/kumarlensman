@@ -1,0 +1,68 @@
+.Lightbox {
+  background: #000;
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  .closebtn {
+    position: absolute;
+    z-index: 2;
+    top:2%;
+    right: 2%;
+    cursor: pointer;
+    color: rgb(129, 129, 129);
+    &:hover{
+        color:white;
+    }
+  }
+  .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+  }
+  .col-10 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    img {
+      max-width: 100%;
+      height: 100vh;
+      object-fit: contain;
+    }
+  }
+}
+
+@media only screen and (max-width: 915px) {
+  .Lightbox {
+    .col-10 {
+      max-width: 70%;
+    }
+  }
+}
+@media only screen and (max-width: 500px) {
+  .Lightbox {
+    .col-10 {
+      max-width: 69%;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .Lightbox {
+    .col {
+      display:none;
+    }
+    .col-10 {
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 0;
+    margin: 0 auto;
+      img {
+        max-width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}

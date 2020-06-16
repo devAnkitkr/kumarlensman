@@ -1,0 +1,37 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$base-color: #fff;
+$font-color: rgb(0, 0, 0);
+body{
+font-family: 'Abel', sans-serif;
+background-color: $base-color ;
+}
+
+input[type='text']{
+  width:100%;
+  padding:5px;
+  border:none;
+  outline:none;
+  border-bottom: 1px solid rgb(0, 0, 0); 
+}
+input[type='email']{
+  width:100%;
+  padding:5px;
+  border:none;
+  outline:none;
+  border-bottom: 1px solid rgb(0, 0, 0); 
+}
+
+textarea{
+  width:100%;
+  border:none;
+  outline:none;
+  resize:none;
+  border-bottom:1px solid rgb(0, 0, 0);
+}
+
+@media only screen and (max-width: 900px){
+  .col-lg{
+    flex-direction: row;
+  }
+}

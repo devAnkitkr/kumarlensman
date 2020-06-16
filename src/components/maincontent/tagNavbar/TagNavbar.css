@@ -1,0 +1,41 @@
+.TagNavbar {
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.TagNavbar nav ul {
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.TagNavbar nav ul li {
+  color: grey;
+  margin: 5px;
+  text-transform: capitalize;
+}
+
+.TagNavbar nav ul li:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 620px) {
+  .TagNavbar {
+    height: 80px;
+  }
+  .TagNavbar nav ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/*# sourceMappingURL=TagNavbar.css.map */

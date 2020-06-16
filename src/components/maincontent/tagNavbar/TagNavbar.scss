@@ -1,0 +1,35 @@
+.TagNavbar{
+    height: 40px;
+    padding:10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    nav{
+        ul{ 
+            padding-left: 0;
+            display:flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            li{ 
+                color:grey;
+                margin:5px;
+                text-transform: capitalize;
+                &:hover{
+                    color:black;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:620px){
+    .TagNavbar{
+        height: 80px;
+        nav{
+            ul{
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+}
