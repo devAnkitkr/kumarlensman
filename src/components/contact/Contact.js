@@ -39,7 +39,7 @@ const Contact = () => {
     const handleForm = (e) => {
         e.preventDefault()
         const { name, email, message } = e.target
-        fetch('http://68.183.90.34:4000/send', {
+        fetch('https://68.183.90.34:4000/send', {
             method: 'POST',
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({
