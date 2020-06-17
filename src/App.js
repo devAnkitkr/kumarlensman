@@ -19,7 +19,7 @@ const App = () => {
   const [UniqueTags, setUniqueTags] = useState();
 
   useEffect(() => {
-    fetch("http://68.183.90.34:4000/", {
+    fetch("http://localhost:4000/api", {
       method: "GET",
       headers: { "Content-Type": "application/json" },
     })

@@ -43,7 +43,7 @@ function Portfolio({ toggleLB, photoInfo }) {
                   width="300"
                   crop="scale"
                   onClick={toggleLB}
-                  id={id}
+                  id={id} 
                   className="card-img-top"
                 />
               </motion.div>
